@@ -114,7 +114,7 @@ header nav ul li a:hover {
     font-size: 32px;
     line-height: 1;
     transition: opacity 0.3s ease;
-    color: #222;
+    color:#222;
 }
 
 .cardHabilidade:hover h3 {
@@ -130,7 +130,7 @@ header nav ul li a:hover {
     font-size: 15px;
     transition: opacity 0.3s ease;
     text-align: center;
-    color: #222;
+    color:#222;
 }
 
 .cardHabilidade:hover .descricaoHabilidade {
@@ -204,8 +204,18 @@ header nav ul li a:hover {
         flex-wrap: wrap;
         gap: 18px !important;
     }
+}
 
-    nav ul li a {
-        font-size: 1rem;
+@media screen and (max-width:767px) {
+    .containerHabilidades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardHabilidade {
+        width: 200px;
+        height: 200px;
     }
 }
+
+    
